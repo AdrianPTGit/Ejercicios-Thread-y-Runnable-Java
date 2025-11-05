@@ -42,3 +42,9 @@
 3. Realiza los cambios necesarios en la otra clase para que todo vuelva a funcionar como antes.
 
 ---
+## 🧠 Resumen de comportamiento
+
+| Método usado | Tipo de ejecución       | Orden de salida       | Observación                                   |
+|---------------|------------------------|------------------------|-----------------------------------------------|
+| `.run()`      | Monohilo (secuencial)  | Siempre el mismo       | No hay concurrencia                           |
+| `.start()`    | Multihilo (concurrente)| Variable, no predecible| Se ejecutan varios hilos al mismo tiempo      |
