@@ -48,3 +48,14 @@
 |---------------|------------------------|------------------------|-----------------------------------------------|
 | `.run()`      | Monohilo (secuencial)  | Siempre el mismo       | No hay concurrencia                           |
 | `.start()`    | Multihilo (concurrente)| Variable, no predecible| Se ejecutan varios hilos al mismo tiempo      |
+
+## 🧠 Resumen Clase `Thread` y metodos
+
+| Elemento                   | Descripción                                                                 |
+|-----------------------------|------------------------------------------------------------------------------|
+| `extends Thread`            | Permite que la clase se comporte como un hilo independiente.                |
+| `run()`                     | Método que define la tarea que ejecutará el hilo.                           |
+| `start()`                   | Inicia un nuevo hilo y llama internamente al método `run()`.                |
+| `run()` (llamado directamente) | No crea un nuevo hilo; ejecuta el código en el hilo actual.              |
+
+
