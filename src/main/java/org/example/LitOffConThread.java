@@ -48,18 +48,34 @@ public class LitOffConThread extends Thread{
 
 
         l1.start();
+
+        l1.setPriority(1);
+        int prioridad = l1.getPriority();
         //l1.join();
 
         l2.start();
         //l2.join(); // espera a que termine t0
 
+        l2.setPriority(2);
+        int prioridad2 = l2.getPriority();
         l3.start();
         //l3.join(); // espera a que termine t1
+
+        l3.setPriority(3);
+        int prioridad3 = l3.getPriority();
 
         l4.start();
         //l4.join(); // espera a que termine t2
 
+        l4.setPriority(4);
+        int prioridad4 = l4.getPriority();
+
         launch.start();
         //launch.join(); // espera a que termine t3
+
+        System.out.println("getPriority l1:"+prioridad);
+        System.out.println("getPriority l2:"+prioridad2);
+        System.out.println("getPriority l3:"+prioridad3);
+        System.out.println("getPriority l4:"+prioridad4);
     }
 }
