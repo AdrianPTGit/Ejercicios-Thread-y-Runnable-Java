@@ -58,4 +58,13 @@
 | `start()`                   | Inicia un nuevo hilo y llama internamente al método `run()`.                |
 | `run()` (llamado directamente) | No crea un nuevo hilo; ejecuta el código en el hilo actual.              |
 
+## 🧠 Resumen clase `MyRunnable` con `implements Runnable`
 
+| Elemento            | Descripción                                                                 |
+|----------------------|------------------------------------------------------------------------------|
+| `implements Runnable`| Permite definir una tarea que puede ejecutarse en un hilo.                  |
+| `run()`              | Contiene el código que ejecutará el hilo cuando se inicie.                  |
+| `new Thread(new MyRunnable()).start()` | Crea e inicia un hilo que ejecutará el método `run()` de `MyRunnable`. |
+
+> ❗ Ventaja principal   
+- Permite heredar de otra clase y separar la lógica del hilo de su ejecución. 
