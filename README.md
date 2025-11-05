@@ -66,5 +66,4 @@
 | `run()`              | Contiene el código que ejecutará el hilo cuando se inicie.                  |
 | `new Thread(new MyRunnable()).start()` | Crea e inicia un hilo que ejecutará el método `run()` de `MyRunnable`. |
 
-> ❗ Ventaja principal   
-- Permite heredar de otra clase y separar la lógica del hilo de su ejecución. 
+> ❗ Ventaja principal:  Permite heredar de otra clase y separar la lógica del hilo de su ejecución. 
